@@ -10,7 +10,7 @@ export default function TodoInput(props) {
 					placeholder="New Todo"
 					value={props.value}
 					onChange={props.onChange}
-					onKeyPress={(e) => props.onKeyPress(e)}
+					onKeyPress={props.onKeyPress}
 				/>
 			</Spacing>
 			<Button size="alpha" text="Add Todo" onClick={props.onButtonClick} />

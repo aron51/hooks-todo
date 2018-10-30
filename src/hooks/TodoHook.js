@@ -5,7 +5,7 @@ export default function useTodo(init = []) {
 	return {
 		todos,
 		addTodo: (todo) => {
-			if (todo !== '') {
+			if (todo.trim().length > 0) {
 				setTodos([ ...todos, { name: todo, checked: false } ]);
 			}
 		},
